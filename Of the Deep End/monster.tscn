@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://cxb8ntgy64w26"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_nuo8e"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4e686"]
+
+[node name="Monster" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_nuo8e")
+
+[node name="FSM" type="Node" parent="."]
+
+[node name="Node" type="Node" parent="FSM"]
+
+[node name="Node2" type="Node" parent="FSM"]
+
+[node name="LDFSM" type="Node" parent="."]
+
+[node name="Light" type="Node" parent="LDFSM"]
+
+[node name="Dark" type="Node" parent="LDFSM"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_4e686")

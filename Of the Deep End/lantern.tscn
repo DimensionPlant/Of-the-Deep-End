@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://dxqj8522v4wdr"]
+
+[ext_resource type="Texture2D" uid="uid://bwiy4ioow1k4s" path="res://icon.svg" id="1_bfqt7"]
+[ext_resource type="Script" path="res://lantern.cs" id="2_fm4x3"]
+
+[node name="Lantern" type="TextureRect"]
+offset_right = 128.0
+offset_bottom = 128.0
+texture = ExtResource("1_bfqt7")
+script = ExtResource("2_fm4x3")
+
+[node name="Brightness" type="Timer" parent="."]
+wait_time = 45.0
+one_shot = true
+
+[node name="Container" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TimeDisplay" type="RichTextLabel" parent="Container"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+bbcode_enabled = true
+text = "[color=black][font_size=26]180[/font_size][/color]"
+fit_content = true

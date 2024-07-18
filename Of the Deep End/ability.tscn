@@ -1,0 +1,38 @@
+[gd_scene load_steps=3 format=3 uid="uid://dbuhn61rmflyb"]
+
+[ext_resource type="Texture2D" uid="uid://bwiy4ioow1k4s" path="res://icon.svg" id="1_incfj"]
+[ext_resource type="Script" path="res://ability.cs" id="2_jgsn3"]
+
+[node name="Ability" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("2_jgsn3")
+
+[node name="Icon" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_incfj")
+
+[node name="Default" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_incfj")
+
+[node name="Cool-down" type="Timer" parent="."]
+one_shot = true
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CenterContainer"]
+visible = false
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+text = "180"

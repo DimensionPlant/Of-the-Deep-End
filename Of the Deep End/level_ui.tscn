@@ -1,0 +1,36 @@
+[gd_scene load_steps=2 format=3 uid="uid://cp31f6wfb7b7o"]
+
+[ext_resource type="PackedScene" uid="uid://dxqj8522v4wdr" path="res://lantern.tscn" id="1_c7adr"]
+
+[node name="Level UI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="HBoxContainer"]
+custom_minimum_size = Vector2(1000, 0)
+layout_mode = 2
+
+[node name="Abilities and Lantern" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="Top Margin" type="MarginContainer" parent="HBoxContainer/Abilities and Lantern"]
+custom_minimum_size = Vector2(0, 25)
+layout_mode = 2
+
+[node name="Lantern" parent="HBoxContainer/Abilities and Lantern" instance=ExtResource("1_c7adr")]
+layout_mode = 2
+
+[node name="Margin to Abilities" type="MarginContainer" parent="HBoxContainer/Abilities and Lantern"]
+layout_mode = 2
