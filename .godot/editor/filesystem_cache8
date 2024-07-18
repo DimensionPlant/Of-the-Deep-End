@@ -1,0 +1,13 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1721315291
+ability.cs::CSharpScript::-1::1721297212::0::1::::<>Control<>::
+ability.tscn::PackedScene::7271188353246077541::1721295538::0::1::::<><>::uid://bwiy4ioow1k4s::::res://icon.svg<>res://ability.cs
+icon.svg::CompressedTexture2D::3948599704092521604::1721252263::1721252283::1::::<><>::
+lantern.cs::CSharpScript::-1::1721295725::0::1::::<>TextureRect<>::
+lantern.tscn::PackedScene::8807242501618972583::1721295538::0::1::::<><>::uid://bwiy4ioow1k4s::::res://icon.svg<>res://lantern.cs
+level_ui.tscn::PackedScene::5885065832291139202::1721295538::0::1::::<><>::uid://dxqj8522v4wdr::::res://lantern.tscn
+monster.tscn::PackedScene::6391277033242585701::1721295538::0::1::::<><>::
+tinywizard.cs::CSharpScript::-1::1721285931::0::1::::<><>::
+tinywizard.tscn::PackedScene::4842563149430394258::1721295538::0::1::::<><>::uid://bwiy4ioow1k4s::::res://icon.svg<>res://tinywizard.cs
+::res://Of-the-Deep-End/::1721315178
+README.md::TextFile::-1::1721315178::0::1::::<><>::

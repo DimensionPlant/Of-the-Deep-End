@@ -1,0 +1,17 @@
+D:\Users\Sven\Documents\GameJam\Of the Deep End\.godot\mono\temp\bin\Debug\Of the Deep End.deps.json
+D:\Users\Sven\Documents\GameJam\Of the Deep End\.godot\mono\temp\bin\Debug\Of the Deep End.runtimeconfig.json
+D:\Users\Sven\Documents\GameJam\Of the Deep End\.godot\mono\temp\bin\Debug\Of the Deep End.dll
+D:\Users\Sven\Documents\GameJam\Of the Deep End\.godot\mono\temp\bin\Debug\Of the Deep End.pdb
+D:\Users\Sven\Documents\GameJam\Of the Deep End\.godot\mono\temp\bin\Debug\GodotSharp.dll
+D:\Users\Sven\Documents\GameJam\Of the Deep End\.godot\mono\temp\bin\Debug\GodotSharpEditor.dll
+D:\Users\Sven\Documents\GameJam\Of the Deep End\.godot\mono\temp\obj\Debug\Of the Deep End.csproj.AssemblyReference.cache
+D:\Users\Sven\Documents\GameJam\Of the Deep End\.godot\mono\temp\obj\Debug\Of the Deep End.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\Sven\Documents\GameJam\Of the Deep End\.godot\mono\temp\obj\Debug\Of the Deep End.AssemblyInfoInputs.cache
+D:\Users\Sven\Documents\GameJam\Of the Deep End\.godot\mono\temp\obj\Debug\Of the Deep End.AssemblyInfo.cs
+D:\Users\Sven\Documents\GameJam\Of the Deep End\.godot\mono\temp\obj\Debug\Of the Deep End.csproj.CoreCompileInputs.cache
+D:\Users\Sven\Documents\GameJam\Of the Deep End\.godot\mono\temp\obj\Debug\Of the Deep End.csproj.CopyComplete
+D:\Users\Sven\Documents\GameJam\Of the Deep End\.godot\mono\temp\obj\Debug\Of the Deep End.dll
+D:\Users\Sven\Documents\GameJam\Of the Deep End\.godot\mono\temp\obj\Debug\refint\Of the Deep End.dll
+D:\Users\Sven\Documents\GameJam\Of the Deep End\.godot\mono\temp\obj\Debug\Of the Deep End.pdb
+D:\Users\Sven\Documents\GameJam\Of the Deep End\.godot\mono\temp\obj\Debug\Of the Deep End.genruntimeconfig.cache
+D:\Users\Sven\Documents\GameJam\Of the Deep End\.godot\mono\temp\obj\Debug\ref\Of the Deep End.dll
