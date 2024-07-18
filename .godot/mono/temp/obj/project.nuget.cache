@@ -1,15 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "LlxTzhyWP+HWEqSasXhqGQZCkFdmjHMsJzMpeYAGTArLH4HE1r51Q+7LZ43Z5xIVWgMINZorhylY55Ak45SJKA==",
+  "dgSpecHash": "a2LP/TmFMLXyeFrOF7U137B+IWVK6Ub6Q8KC2bz7llnvQlGlqCwKGaIg6KIiMUVtlQdBc3DfRuKBNH7jx9jz2w==",
   "success": true,
-  "projectFilePath": "D:\\Users\\Sven\\Documents\\GameJam\\Of the Deep End\\Of the Deep End.csproj",
+  "projectFilePath": "C:\\Users\\user\\Desktop\\Godot\\Of-the-Deep-End\\Of the Deep End.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Sven\\AppData\\Roaming\\Godot\\mono\\GodotNuGetFallbackFolder\\godot.sourcegenerators\\4.0.0\\godot.sourcegenerators.4.0.0.nupkg.sha512",
-    "C:\\Users\\Sven\\AppData\\Roaming\\Godot\\mono\\GodotNuGetFallbackFolder\\godotsharp\\4.0.0\\godotsharp.4.0.0.nupkg.sha512",
-    "C:\\Users\\Sven\\AppData\\Roaming\\Godot\\mono\\GodotNuGetFallbackFolder\\godotsharpeditor\\4.0.0\\godotsharpeditor.4.0.0.nupkg.sha512",
-    "C:\\Users\\Sven\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.14\\microsoft.netcore.app.ref.6.0.14.nupkg.sha512",
-    "C:\\Users\\Sven\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.14\\microsoft.windowsdesktop.app.ref.6.0.14.nupkg.sha512",
-    "C:\\Users\\Sven\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.14\\microsoft.aspnetcore.app.ref.6.0.14.nupkg.sha512"
+    "C:\\Users\\user\\.nuget\\packages\\godot.sourcegenerators\\4.2.2\\godot.sourcegenerators.4.2.2.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\godotsharp\\4.2.2\\godotsharp.4.2.2.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\godotsharpeditor\\4.2.2\\godotsharpeditor.4.2.2.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.22\\microsoft.netcore.app.ref.6.0.22.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.22\\microsoft.windowsdesktop.app.ref.6.0.22.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.22\\microsoft.aspnetcore.app.ref.6.0.22.nupkg.sha512"
   ],
   "logs": []
 }

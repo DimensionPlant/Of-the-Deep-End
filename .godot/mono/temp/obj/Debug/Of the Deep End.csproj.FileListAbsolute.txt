@@ -15,3 +15,20 @@ D:\Users\Sven\Documents\GameJam\Of the Deep End\.godot\mono\temp\obj\Debug\refin
 D:\Users\Sven\Documents\GameJam\Of the Deep End\.godot\mono\temp\obj\Debug\Of the Deep End.pdb
 D:\Users\Sven\Documents\GameJam\Of the Deep End\.godot\mono\temp\obj\Debug\Of the Deep End.genruntimeconfig.cache
 D:\Users\Sven\Documents\GameJam\Of the Deep End\.godot\mono\temp\obj\Debug\ref\Of the Deep End.dll
+C:\Users\user\Desktop\Godot\Of-the-Deep-End\.godot\mono\temp\bin\Debug\Of the Deep End.deps.json
+C:\Users\user\Desktop\Godot\Of-the-Deep-End\.godot\mono\temp\bin\Debug\Of the Deep End.runtimeconfig.json
+C:\Users\user\Desktop\Godot\Of-the-Deep-End\.godot\mono\temp\bin\Debug\Of the Deep End.dll
+C:\Users\user\Desktop\Godot\Of-the-Deep-End\.godot\mono\temp\bin\Debug\Of the Deep End.pdb
+C:\Users\user\Desktop\Godot\Of-the-Deep-End\.godot\mono\temp\bin\Debug\GodotSharp.dll
+C:\Users\user\Desktop\Godot\Of-the-Deep-End\.godot\mono\temp\bin\Debug\GodotSharpEditor.dll
+C:\Users\user\Desktop\Godot\Of-the-Deep-End\.godot\mono\temp\obj\Debug\Of the Deep End.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\Godot\Of-the-Deep-End\.godot\mono\temp\obj\Debug\Of the Deep End.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\Godot\Of-the-Deep-End\.godot\mono\temp\obj\Debug\Of the Deep End.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\Godot\Of-the-Deep-End\.godot\mono\temp\obj\Debug\Of the Deep End.AssemblyInfo.cs
+C:\Users\user\Desktop\Godot\Of-the-Deep-End\.godot\mono\temp\obj\Debug\Of the Deep End.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Godot\Of-the-Deep-End\.godot\mono\temp\obj\Debug\Of the Deep End.csproj.CopyComplete
+C:\Users\user\Desktop\Godot\Of-the-Deep-End\.godot\mono\temp\obj\Debug\Of the Deep End.dll
+C:\Users\user\Desktop\Godot\Of-the-Deep-End\.godot\mono\temp\obj\Debug\refint\Of the Deep End.dll
+C:\Users\user\Desktop\Godot\Of-the-Deep-End\.godot\mono\temp\obj\Debug\Of the Deep End.pdb
+C:\Users\user\Desktop\Godot\Of-the-Deep-End\.godot\mono\temp\obj\Debug\Of the Deep End.genruntimeconfig.cache
+C:\Users\user\Desktop\Godot\Of-the-Deep-End\.godot\mono\temp\obj\Debug\ref\Of the Deep End.dll

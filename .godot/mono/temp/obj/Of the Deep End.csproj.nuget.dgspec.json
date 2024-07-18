@@ -1,26 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Users\\Sven\\Documents\\GameJam\\Of the Deep End\\Of the Deep End.csproj": {}
+    "C:\\Users\\user\\Desktop\\Godot\\Of-the-Deep-End\\Of the Deep End.csproj": {}
   },
   "projects": {
-    "D:\\Users\\Sven\\Documents\\GameJam\\Of the Deep End\\Of the Deep End.csproj": {
+    "C:\\Users\\user\\Desktop\\Godot\\Of-the-Deep-End\\Of the Deep End.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Users\\Sven\\Documents\\GameJam\\Of the Deep End\\Of the Deep End.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\Godot\\Of-the-Deep-End\\Of the Deep End.csproj",
         "projectName": "Of the Deep End",
-        "projectPath": "D:\\Users\\Sven\\Documents\\GameJam\\Of the Deep End\\Of the Deep End.csproj",
-        "packagesPath": "C:\\Users\\Sven\\.nuget\\packages\\",
-        "outputPath": "D:\\Users\\Sven\\Documents\\GameJam\\Of the Deep End\\.godot\\mono\\temp\\obj\\",
+        "projectPath": "C:\\Users\\user\\Desktop\\Godot\\Of-the-Deep-End\\Of the Deep End.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\Godot\\Of-the-Deep-End\\.godot\\mono\\temp\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Users\\Sven\\AppData\\Roaming\\Godot\\mono\\GodotNuGetFallbackFolder",
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Sven\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Users\\Sven\\AppData\\Roaming\\NuGet\\config\\Godot.Offline.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -48,15 +42,15 @@
           "dependencies": {
             "Godot.SourceGenerators": {
               "target": "Package",
-              "version": "[4.0.0, )"
+              "version": "[4.2.2, )"
             },
             "GodotSharp": {
               "target": "Package",
-              "version": "[4.0.0, )"
+              "version": "[4.2.2, )"
             },
             "GodotSharpEditor": {
               "target": "Package",
-              "version": "[4.0.0, )"
+              "version": "[4.2.2, )"
             }
           },
           "imports": [
@@ -73,15 +67,15 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.14, 6.0.14]"
+              "version": "[6.0.22, 6.0.22]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.14, 6.0.14]"
+              "version": "[6.0.22, 6.0.22]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.14, 6.0.14]"
+              "version": "[6.0.22, 6.0.22]"
             }
           ],
           "frameworkReferences": {
@@ -89,7 +83,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,6 +1,12 @@
 res://tinywizard.tscn
-res://wizard.tscn
-res://level_ui.tscn
-res://lantern.tscn
-res://monster.tscn
 res://ability.tscn
+res://lantern.tscn
+res://level_ui.tscn
+res://Characters/tinywizard.tscn
+res://Objects/lantern.tscn
+res://Characters/monster.tscn
+res://Scenes/level_ui.tscn
+res://Scenes/MainMenu.tscn
+res://Objects/lantern.cs
+res://Characters/tinywizard.cs
+res://ability.cs
