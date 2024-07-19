@@ -1,5 +1,6 @@
 using Godot;
 using System;
+using System.Runtime.ExceptionServices;
 
 public partial class tinywizard : KinematicBody2D
 {
@@ -7,8 +8,18 @@ public partial class tinywizard : KinematicBody2D
 	public const float JumpVelocity = -400.0f;
 	private Vector2 _velocity = new Vector2();
 
-	// Get the gravity from the project settings to be synced with RigidBody nodes.
-	//public float gravity = ProjectSettings.GetSetting("physics/2d/default_gravity").AsSingle();
+	//stats
+	//Hitpoints
+	private double _hp;
+	//attack
+	private double _atk;
+	//attack speed
+	private double _atkspd;
+	//health regeneration
+	private double _regen;
+	//Crit rate
+	private double _cr;
+
 
 	public override void _PhysicsProcess(float delta)
 	{
