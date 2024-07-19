@@ -19,7 +19,7 @@ public partial class lantern : TextureRect
 	{
 		double reserves = _bright.TimeLeft;
 		_bright.Stop();
-		_bright.WaitTime = reserves+fuel;
+		_bright.WaitTime = (float) (reserves+fuel);
 		_bright.Start();		
 	}
 
@@ -27,12 +27,12 @@ public partial class lantern : TextureRect
 	{
 		double reserves = _bright.TimeLeft;
 		_bright.Stop();
-		_bright.WaitTime = reserves-fuel;
+		_bright.WaitTime = (float) (reserves-fuel);
 		_bright.Start();		
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
-	public override void _Process(double delta)
+	public override void _Process(float delta)
 	{
 		_display.Text = Math.Round(_bright.TimeLeft).ToString();
 		if(_bright.TimeLeft<10)

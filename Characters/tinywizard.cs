@@ -1,17 +1,17 @@
 using Godot;
 using System;
 
-public partial class tinywizard : CharacterBody2D
+public partial class tinywizard : KinematicBody2D
 {
 	public const float Speed = 300.0f;
 	public const float JumpVelocity = -400.0f;
+	private Vector2 _velocity = new Vector2();
 
 	// Get the gravity from the project settings to be synced with RigidBody nodes.
-	public float gravity = ProjectSettings.GetSetting("physics/2d/default_gravity").AsSingle();
+	//public float gravity = ProjectSettings.GetSetting("physics/2d/default_gravity").AsSingle();
 
-	public override void _PhysicsProcess(double delta)
+	public override void _PhysicsProcess(float delta)
 	{
-		Vector2 velocity = Velocity;
 
 		/** Add the gravity.
 		if (!IsOnFloor())
@@ -26,15 +26,19 @@ public partial class tinywizard : CharacterBody2D
 		Vector2 direction = Input.GetVector("ui_left", "ui_right", "ui_up", "ui_down");
 		if (direction != Vector2.Zero)
 		{
-			velocity = direction * Speed;
+			_velocity = direction * Speed;
 		}
 		else
 		{
-			velocity.X = Mathf.MoveToward(Velocity.X, 0, Speed);
+			if(_velocity.Length()>0)
+			{
+				_velocity -= _velocity/4;
+			}
+			
 		}
 
-		Velocity = velocity;
-		MoveAndSlide();
+		_velocity = MoveAndSlide(_velocity);
+		
 		Hud();
 	}
 
@@ -43,18 +47,19 @@ public partial class tinywizard : CharacterBody2D
 		//get relative vector to produce the angle and offset for flathud
 		float angle;
 		Godot.Vector2 mouserelpos = GetGlobalMousePosition()-Position;
-		if(mouserelpos.Y>0)
+		if(mouserelpos.y>0)
 		{
-			angle = (float) Math.Acos(mouserelpos.X/mouserelpos.Length());
+			angle = (float) Math.Acos(mouserelpos.x/mouserelpos.Length());
 		}
 		else
 		{
-			angle = (float) -Math.Acos(mouserelpos.X/mouserelpos.Length());
+			angle = (float) -Math.Acos(mouserelpos.x/mouserelpos.Length());
 		}
 		
-		GetNode<Sprite2D>("Flat Hud").Rotation = (float) (angle+(Math.PI/2));
+		GetNode<Sprite>("Flat Hud").Rotation = (float) (angle+(Math.PI/2));
 		//GD.Print(angle, GetNode<Sprite2D>("Flat Hud").Rotation);
-		GetNode<Sprite2D>("Flat Hud").Position = mouserelpos/mouserelpos.Length()*200;
+		GetNode<Sprite>("Flat Hud").Position = mouserelpos/mouserelpos.Length()*100;
+		
 	}
 
 }

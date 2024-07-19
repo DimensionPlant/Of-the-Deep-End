@@ -1,25 +1,35 @@
-[gd_scene load_steps=3 format=3 uid="uid://cxb8ntgy64w26"]
+[gd_scene load_steps=8 format=2]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_nuo8e"]
+[ext_resource path="res://icon.svg" type="Texture" id=1]
+[ext_resource path="res://Characters/monsterStates/LightState.cs" type="Script" id=2]
+[ext_resource path="res://Characters/monsterStates/DarkState.cs" type="Script" id=3]
+[ext_resource path="res://StateMachine.cs" type="Script" id=4]
+[ext_resource path="res://Characters/monster.cs" type="Script" id=5]
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_4e686"]
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 1 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
 
-[node name="Monster" type="CharacterBody2D"]
+[sub_resource type="CircleShape2D" id=1]
+
+[node name="KinematicBody2D" type="KinematicBody2D"]
+script = ExtResource( 5 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CircleShape2D_nuo8e")
+shape = SubResource( 1 )
 
 [node name="FSM" type="Node" parent="."]
+script = ExtResource( 4 )
 
-[node name="Node" type="Node" parent="FSM"]
+[node name="Light" type="Node" parent="FSM"]
+script = ExtResource( 2 )
 
-[node name="Node2" type="Node" parent="FSM"]
-
-[node name="LDFSM" type="Node" parent="."]
-
-[node name="Light" type="Node" parent="LDFSM"]
-
-[node name="Dark" type="Node" parent="LDFSM"]
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-sprite_frames = SubResource("SpriteFrames_4e686")
+[node name="Dark" type="Node" parent="FSM"]
+script = ExtResource( 3 )

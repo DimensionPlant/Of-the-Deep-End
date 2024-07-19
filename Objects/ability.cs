@@ -16,7 +16,7 @@ public partial class ability : Control
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
-	public override void _Process(double delta)
+	public override void _Process(float delta)
 	{
 	}
 }

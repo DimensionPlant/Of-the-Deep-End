@@ -1,34 +1,31 @@
-[gd_scene load_steps=5 format=3 uid="uid://ca81kpsqtd57s"]
+[gd_scene load_steps=5 format=2]
 
-[ext_resource type="Script" path="res://Characters/tinywizard.cs" id="1_4wjam"]
-[ext_resource type="Texture2D" uid="uid://bwiy4ioow1k4s" path="res://icon.svg" id="2_4qo7x"]
+[ext_resource path="res://Characters/tinywizard.cs" type="Script" id=2]
+[ext_resource path="res://icon.svg" type="Texture" id=3]
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_wmdlc"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("2_4qo7x")
-}],
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 3 ) ],
 "loop": true,
-"name": &"default",
+"name": "default",
 "speed": 5.0
-}]
+} ]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_bcvct"]
-radius = 64.47
+[sub_resource type="CircleShape2D" id=2]
+radius = 63.43
 
-[node name="Tiny Wizard" type="CharacterBody2D"]
-script = ExtResource("1_4wjam")
+[node name="Tinywizard" type="KinematicBody2D"]
+script = ExtResource( 2 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-sprite_frames = SubResource("SpriteFrames_wmdlc")
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CircleShape2D_bcvct")
+shape = SubResource( 2 )
 
-[node name="Flat Hud" type="Sprite2D" parent="."]
-position = Vector2(-2.38419e-07, 48.5)
-scale = Vector2(1, 0.242188)
-texture = ExtResource("2_4qo7x")
+[node name="Flat Hud" type="Sprite" parent="."]
+position = Vector2( -0.499996, 0 )
+scale = Vector2( 0.992188, 0.109375 )
+texture = ExtResource( 3 )

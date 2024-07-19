@@ -1,0 +1,19 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Of-the- Deep- End", "Of-the- Deep- End.csproj", "{FD86D531-9325-434C-A4E8-847822C7B521}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+	Debug|Any CPU = Debug|Any CPU
+	ExportDebug|Any CPU = ExportDebug|Any CPU
+	ExportRelease|Any CPU = ExportRelease|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FD86D531-9325-434C-A4E8-847822C7B521}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD86D531-9325-434C-A4E8-847822C7B521}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD86D531-9325-434C-A4E8-847822C7B521}.ExportDebug|Any CPU.ActiveCfg = ExportDebug|Any CPU
+		{FD86D531-9325-434C-A4E8-847822C7B521}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
+		{FD86D531-9325-434C-A4E8-847822C7B521}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
+		{FD86D531-9325-434C-A4E8-847822C7B521}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
+	EndGlobalSection
+EndGlobal
