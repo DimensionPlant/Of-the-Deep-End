@@ -10,7 +10,9 @@ public partial class State : Node
 
 	// Called when the node enters the scene tree for the first time.
 	new public virtual void Ready(){}
+	// Called every frame
 	public virtual void Update(float delta){}
+	// Called every frame that the physics engine computes
 	public virtual void PhysicsUpdate(float delta){}
 	public virtual void HandleInput(InputEvent @event){}
 

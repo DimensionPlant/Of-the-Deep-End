@@ -7,3 +7,12 @@ D:\Users\Sven\Documents\GameJam\Of-the-Deep-End\.mono\temp\bin\Debug\Of-the- Dee
 D:\Users\Sven\Documents\GameJam\Of-the-Deep-End\.mono\temp\bin\Debug\Of-the- Deep- End.pdb
 D:\Users\Sven\Documents\GameJam\Of-the-Deep-End\.mono\temp\obj\Debug\Of-the- Deep- End.dll
 D:\Users\Sven\Documents\GameJam\Of-the-Deep-End\.mono\temp\obj\Debug\Of-the- Deep- End.pdb
+C:\Users\user\Desktop\Godot\Of-the-Deep-End\.mono\temp\bin\Debug\Of-the- Deep- End.dll
+C:\Users\user\Desktop\Godot\Of-the-Deep-End\.mono\temp\bin\Debug\Of-the- Deep- End.pdb
+C:\Users\user\Desktop\Godot\Of-the-Deep-End\.mono\temp\obj\Debug\Of-the- Deep- End.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\Godot\Of-the-Deep-End\.mono\temp\obj\Debug\Of-the- Deep- End.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\Godot\Of-the-Deep-End\.mono\temp\obj\Debug\Of-the- Deep- End.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\Godot\Of-the-Deep-End\.mono\temp\obj\Debug\Of-the- Deep- End.AssemblyInfo.cs
+C:\Users\user\Desktop\Godot\Of-the-Deep-End\.mono\temp\obj\Debug\Of-the- Deep- End.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Godot\Of-the-Deep-End\.mono\temp\obj\Debug\Of-the- Deep- End.dll
+C:\Users\user\Desktop\Godot\Of-the-Deep-End\.mono\temp\obj\Debug\Of-the- Deep- End.pdb
