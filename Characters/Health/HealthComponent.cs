@@ -6,13 +6,15 @@ public class HealthComponent : Node
 	// Public field to obtain current health.
 	public int Health { get => (int)Math.Floor(_health); }
 	private float _health = 0; 
-	public int BaseStartingHealth = 100;
+	[Export] public int BaseStartingHealth = 100;
 
 	public override void _EnterTree(){
 		_health = BaseStartingHealth;
 	}
 	
+	//
 	//For debug purposes, delete if needed! 
+	//
 	public override void _UnhandledInput(InputEvent @event)
 	{
 		if (@event is InputEventKey eventKey){
@@ -41,7 +43,7 @@ public class HealthComponent : Node
 		
 		GD.Print(_health);
 		report.damage = subTotalDamage;
-		return new DamageReport();
+		return report;
 	}
 }
 

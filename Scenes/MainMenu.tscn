@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://Characters/tinywizard.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Characters/TinyWizard.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/level_ui.tscn" type="PackedScene" id=2]
 
 [node name="Main Menu" type="Node2D"]
