@@ -12,14 +12,18 @@ public partial class TinyWizard : BaseEntity
 	{
 		mouserelpos = GetGlobalMousePosition()-Position;
 		Sprite Hat = GetNode<Sprite>("Hat");
+		Sprite Staff = GetNode<Sprite>("Staff");
 		int sprite_id = (int) Math.Round(4*((AngleViaX(mouserelpos))/Math.PI+1));
 		if(sprite_id<8)
 		{
 			Hat.Frame = sprite_id;
+			Staff.Frame = sprite_id;
+
 		}
 		else
 		{
 			Hat.Frame = 0;
+			Staff.Frame = 0;
 		}
 		
 	}
@@ -49,10 +53,10 @@ public partial class TinyWizard : BaseEntity
 		}
 
 		_velocity = MoveAndSlide(_velocity);
-		Hud();
+		//Hud();
 	}
 
-	private void Hud()
+	/**private void Hud()
 	{
 		//get relative vector to produce the angle and offset for flathud
 		float angle = AngleViaX(mouserelpos);
@@ -60,7 +64,7 @@ public partial class TinyWizard : BaseEntity
 		GetNode<Sprite>("Flat Hud").Rotation = (float) (angle+(Math.PI/2));
 		//GD.Print(angle, GetNode<Sprite2D>("Flat Hud").Rotation);
 		GetNode<Sprite>("Flat Hud").Position = mouserelpos/mouserelpos.Length()*100;
-	}
+	}*/
 
 	private float AngleViaX(Vector2 mouserelpos)
 	{
@@ -72,6 +76,21 @@ public partial class TinyWizard : BaseEntity
 		else
 		{
 			angle = (float) -Math.Acos(mouserelpos.x/mouserelpos.Length());
+		}
+		
+		return angle;
+	}
+
+	private double AngleViaY(Vector2 mouserelpos)
+	{
+		float angle;
+		if(mouserelpos.x>0)
+		{
+			angle = (float) Math.Asin(mouserelpos.y/mouserelpos.Length());
+		}
+		else
+		{
+			angle = (float) -Math.Asin(mouserelpos.y/mouserelpos.Length());
 		}
 		
 		return angle;
