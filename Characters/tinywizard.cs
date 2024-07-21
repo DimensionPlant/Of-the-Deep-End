@@ -1,29 +1,13 @@
 using Godot;
 using System;
-using System.Runtime.ExceptionServices;
 
-public partial class tinywizard : KinematicBody2D
+public partial class TinyWizard : BaseEntity
 {
-	public const float Speed = 300.0f;
-	public const float JumpVelocity = -400.0f;
-	private Vector2 _velocity = new Vector2();
-
-	//stats
-	//Hitpoints
-	private double _hp;
-	//attack
-	private double _atk;
-	//attack speed
-	private double _atkspd;
-	//health regeneration
-	private double _regen;
-	//Crit rate
-	private double _cr;
-
+	// Get the gravity from the project settings to be synced with RigidBody nodes.
+	//public float gravity = ProjectSettings.GetSetting("physics/2d/default_gravity").AsSingle();
 
 	public override void _PhysicsProcess(float delta)
 	{
-
 		/** Add the gravity.
 		if (!IsOnFloor())
 			velocity.Y += gravity * (float)delta;
@@ -45,11 +29,8 @@ public partial class tinywizard : KinematicBody2D
 			{
 				_velocity -= _velocity/4;
 			}
-			
 		}
-
 		_velocity = MoveAndSlide(_velocity);
-		
 		Hud();
 	}
 
@@ -70,7 +51,5 @@ public partial class tinywizard : KinematicBody2D
 		GetNode<Sprite>("Flat Hud").Rotation = (float) (angle+(Math.PI/2));
 		//GD.Print(angle, GetNode<Sprite2D>("Flat Hud").Rotation);
 		GetNode<Sprite>("Flat Hud").Position = mouserelpos/mouserelpos.Length()*100;
-		
 	}
-
 }
