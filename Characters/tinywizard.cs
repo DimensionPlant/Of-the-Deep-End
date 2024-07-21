@@ -1,11 +1,19 @@
 using Godot;
 using System;
+using System.Security.Authentication;
 
 public partial class TinyWizard : BaseEntity
 {
 	// Get the gravity from the project settings to be synced with RigidBody nodes.
 	//public float gravity = ProjectSettings.GetSetting("physics/2d/default_gravity").AsSingle();
+	Vector2 mouserelpos;
 
+	public override void _Process(float delta)
+	{
+		mouserelpos = GetGlobalMousePosition()-Position;
+		Sprite Hat = GetNode<Sprite>("Hat");
+		Hat.Frame = (int) Math.Round(7*(angler(mouserelpos))/2/Math.PI+3);
+	}
 	public override void _PhysicsProcess(float delta)
 	{
 		/** Add the gravity.
@@ -30,6 +38,7 @@ public partial class TinyWizard : BaseEntity
 				_velocity -= _velocity/4;
 			}
 		}
+
 		_velocity = MoveAndSlide(_velocity);
 		Hud();
 	}
@@ -37,8 +46,16 @@ public partial class TinyWizard : BaseEntity
 	private void Hud()
 	{
 		//get relative vector to produce the angle and offset for flathud
+		float angle = angler(mouserelpos);
+
+		GetNode<Sprite>("Flat Hud").Rotation = (float) (angle+(Math.PI/2));
+		//GD.Print(angle, GetNode<Sprite2D>("Flat Hud").Rotation);
+		GetNode<Sprite>("Flat Hud").Position = mouserelpos/mouserelpos.Length()*100;
+	}
+
+	private float angler(Vector2 mouserelpos)
+	{
 		float angle;
-		Godot.Vector2 mouserelpos = GetGlobalMousePosition()-Position;
 		if(mouserelpos.y>0)
 		{
 			angle = (float) Math.Acos(mouserelpos.x/mouserelpos.Length());
@@ -48,8 +65,6 @@ public partial class TinyWizard : BaseEntity
 			angle = (float) -Math.Acos(mouserelpos.x/mouserelpos.Length());
 		}
 		
-		GetNode<Sprite>("Flat Hud").Rotation = (float) (angle+(Math.PI/2));
-		//GD.Print(angle, GetNode<Sprite2D>("Flat Hud").Rotation);
-		GetNode<Sprite>("Flat Hud").Position = mouserelpos/mouserelpos.Length()*100;
+		return angle;
 	}
 }

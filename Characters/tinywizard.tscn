@@ -3,14 +3,7 @@
 [ext_resource path="res://Characters/Health/HealthComponent.cs" type="Script" id=1]
 [ext_resource path="res://Characters/TinyWizard.cs" type="Script" id=2]
 [ext_resource path="res://icon.svg" type="Texture" id=3]
-
-[sub_resource type="SpriteFrames" id=1]
-animations = [ {
-"frames": [ ExtResource( 3 ) ],
-"loop": true,
-"name": "default",
-"speed": 5.0
-} ]
+[ext_resource path="res://Characters/EntitySprites/WizardHat.png" type="Texture" id=4]
 
 [sub_resource type="CircleShape2D" id=2]
 radius = 63.43
@@ -20,8 +13,10 @@ script = ExtResource( 2 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-frames = SubResource( 1 )
+[node name="Hat" type="Sprite" parent="."]
+scale = Vector2( 0.300847, 0.300847 )
+texture = ExtResource( 4 )
+hframes = 8
 
 [node name="HealthComponent" type="CollisionShape2D" parent="."]
 shape = SubResource( 2 )
