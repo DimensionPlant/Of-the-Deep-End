@@ -1,0 +1,46 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Objects/Sprites/AlchemistsChest.png" type="Texture" id=1]
+[ext_resource path="res://Objects/Interact/InteractComponent.cs" type="Script" id=2]
+[ext_resource path="res://Objects/Chest.cs" type="Script" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 70, 50 )
+
+[node name="Chest" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="Sprite" type="Sprite" parent="."]
+scale = Vector2( 0.195975, 0.195975 )
+texture = ExtResource( 1 )
+hframes = 8
+
+[node name="InteractComponent" type="Area2D" parent="."]
+scale = Vector2( 0.95981, 1.00712 )
+script = ExtResource( 2 )
+
+[node name="Range" type="CollisionShape2D" parent="InteractComponent"]
+shape = SubResource( 1 )
+
+[node name="Cost" type="RichTextLabel" parent="."]
+visible = false
+margin_left = -47.0307
+margin_top = -37.2636
+margin_right = 49.9693
+margin_bottom = -10.2636
+bbcode_enabled = true
+bbcode_text = "10 Seconds"
+text = "10 Seconds"
+
+[node name="TextureButton" type="TextureButton" parent="."]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="TextureButton2" type="TextureButton" parent="."]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+
+[connection signal="body_entered" from="InteractComponent" to="InteractComponent" method="InRange"]
+[connection signal="body_exited" from="InteractComponent" to="InteractComponent" method="OutRange"]

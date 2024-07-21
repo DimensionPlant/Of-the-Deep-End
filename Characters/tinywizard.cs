@@ -12,7 +12,16 @@ public partial class TinyWizard : BaseEntity
 	{
 		mouserelpos = GetGlobalMousePosition()-Position;
 		Sprite Hat = GetNode<Sprite>("Hat");
-		Hat.Frame = (int) Math.Round(7*(angler(mouserelpos))/2/Math.PI+3);
+		int sprite_id = (int) Math.Round(4*((AngleViaX(mouserelpos))/Math.PI+1));
+		if(sprite_id<8)
+		{
+			Hat.Frame = sprite_id;
+		}
+		else
+		{
+			Hat.Frame = 0;
+		}
+		
 	}
 	public override void _PhysicsProcess(float delta)
 	{
@@ -46,14 +55,14 @@ public partial class TinyWizard : BaseEntity
 	private void Hud()
 	{
 		//get relative vector to produce the angle and offset for flathud
-		float angle = angler(mouserelpos);
+		float angle = AngleViaX(mouserelpos);
 
 		GetNode<Sprite>("Flat Hud").Rotation = (float) (angle+(Math.PI/2));
 		//GD.Print(angle, GetNode<Sprite2D>("Flat Hud").Rotation);
 		GetNode<Sprite>("Flat Hud").Position = mouserelpos/mouserelpos.Length()*100;
 	}
 
-	private float angler(Vector2 mouserelpos)
+	private float AngleViaX(Vector2 mouserelpos)
 	{
 		float angle;
 		if(mouserelpos.y>0)

@@ -1,10 +1,14 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Characters/TinyWizard.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/level_ui.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Objects/Chest.tscn" type="PackedScene" id=3]
 
 [node name="Main Menu" type="Node2D"]
 
 [node name="Level UI" parent="." instance=ExtResource( 2 )]
+
+[node name="Chest" parent="." instance=ExtResource( 3 )]
+position = Vector2( 558, 134 )
 
 [node name="TinyWizard" parent="." instance=ExtResource( 1 )]
