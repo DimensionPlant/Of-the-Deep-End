@@ -16,31 +16,45 @@ texture = ExtResource( 1 )
 hframes = 8
 
 [node name="InteractComponent" type="Area2D" parent="."]
+visible = false
 scale = Vector2( 0.95981, 1.00712 )
 script = ExtResource( 2 )
 
 [node name="Range" type="CollisionShape2D" parent="InteractComponent"]
 shape = SubResource( 1 )
 
-[node name="Cost" type="RichTextLabel" parent="."]
+[node name="Container" type="CenterContainer" parent="."]
 visible = false
-margin_left = -47.0307
-margin_top = -37.2636
-margin_right = 49.9693
-margin_bottom = -10.2636
+margin_left = -50.0
+margin_top = -105.0
+margin_right = 50.0
+margin_bottom = 45.0
+rect_min_size = Vector2( 100, 100 )
+
+[node name="Options" type="HBoxContainer" parent="Container"]
+visible = false
+margin_left = 48.0
+margin_top = 75.0
+margin_right = 52.0
+margin_bottom = 75.0
+
+[node name="Option 0" type="TextureButton" parent="Container/Options"]
+
+[node name="Option 1" type="TextureButton" parent="Container/Options"]
+margin_left = 4.0
+margin_right = 4.0
+
+[node name="Cost" type="RichTextLabel" parent="Container"]
+margin_top = 67.0
+margin_right = 100.0
+margin_bottom = 82.0
+rect_min_size = Vector2( 100, 0 )
 bbcode_enabled = true
 bbcode_text = "10 Seconds"
 text = "10 Seconds"
+fit_content_height = true
 
-[node name="TextureButton" type="TextureButton" parent="."]
-visible = false
-margin_right = 40.0
-margin_bottom = 40.0
-
-[node name="TextureButton2" type="TextureButton" parent="."]
-visible = false
-margin_right = 40.0
-margin_bottom = 40.0
-
+[connection signal="Interacted" from="InteractComponent" to="." method="OnInteraction"]
+[connection signal="Proximity" from="InteractComponent" to="." method="OnProx"]
 [connection signal="body_entered" from="InteractComponent" to="InteractComponent" method="InRange"]
 [connection signal="body_exited" from="InteractComponent" to="InteractComponent" method="OutRange"]

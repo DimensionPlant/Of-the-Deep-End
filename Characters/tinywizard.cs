@@ -81,6 +81,7 @@ public partial class TinyWizard : BaseEntity
 		return angle;
 	}
 
+	//eventually I'll figure out which arcane thoughts I had made AngleViaX possible and apply it here
 	private double AngleViaY(Vector2 mouserelpos)
 	{
 		float angle;
@@ -90,9 +91,10 @@ public partial class TinyWizard : BaseEntity
 		}
 		else
 		{
-			angle = (float) -Math.Asin(mouserelpos.y/mouserelpos.Length());
+			angle = (float) (Math.Asin(mouserelpos.y/mouserelpos.Length()));
 		}
 		
 		return angle;
 	}
+
 }
