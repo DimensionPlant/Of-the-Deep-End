@@ -5,11 +5,19 @@ public class HealthComponent : Node
 {
 	// Public field to obtain current health.
 	public int Health { get => (int)Math.Floor(_health); }
+	public int MaxHealth { set => _maxHealth += value; }
 	private float _health = 0; 
+	private float _maxHealth = 100;
+	private bool _initialized = false;
 	[Export] public int BaseStartingHealth = 100;
 
-	public override void _EnterTree(){
-		_health = BaseStartingHealth;
+	public override void _Ready(){
+		if(!_initialized) _health = BaseStartingHealth;
+	}
+	public void InitializeHealthComponent(int maxHealth){
+		_maxHealth = maxHealth;
+		_health = maxHealth;
+		_initialized = true;
 	}
 	
 	//
@@ -44,6 +52,10 @@ public class HealthComponent : Node
 		GD.Print(_health);
 		report.damage = subTotalDamage;
 		return report;
+	}
+	public void Heal(int healAmount){
+		_health += healAmount;
+		if(_health > _maxHealth){ _health = _maxHealth; }
 	}
 }
 
