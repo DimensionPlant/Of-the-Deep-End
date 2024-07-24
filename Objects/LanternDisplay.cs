@@ -1,7 +1,7 @@
 using Godot;
 using System;
 
-public partial class lantern : TextureRect
+public partial class LanternDisplay : TextureRect
 {
 
 	private Timer _bright;

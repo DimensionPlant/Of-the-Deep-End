@@ -1,7 +1,7 @@
 using Godot;
 using System;
 
-public partial class ability : Control
+public partial class AbilityDisplay : Control
 {
 
 	private Timer _cooldown;

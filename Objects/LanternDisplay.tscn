@@ -1,13 +1,13 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://Objects/lantern.cs" type="Script" id=1]
-[ext_resource path="res://icon.svg" type="Texture" id=2]
+[ext_resource path="res://icon.svg" type="Texture" id=1]
+[ext_resource path="res://Objects/LanternDisplay.cs" type="Script" id=2]
 
 [node name="Lantern" type="TextureRect"]
 margin_right = 40.0
 margin_bottom = 40.0
-texture = ExtResource( 2 )
-script = ExtResource( 1 )
+texture = ExtResource( 1 )
+script = ExtResource( 2 )
 
 [node name="Brightness" type="Timer" parent="."]
 

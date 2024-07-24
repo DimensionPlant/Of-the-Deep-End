@@ -1,23 +1,61 @@
-[gd_scene format=2]
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scenes/AbilityDisplay.tscn" type="PackedScene" id=1]
 
 [node name="Level UI" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 
-[node name="HBoxContainer" type="HBoxContainer" parent="."]
-margin_right = 40.0
-margin_bottom = 40.0
+[node name="Ribbon" type="Sprite" parent="."]
+position = Vector2( 5768, 0 )
 
-[node name="Center" type="MarginContainer" parent="HBoxContainer"]
-margin_bottom = 40.0
+[node name="Border" type="CenterContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
 
-[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="Border"]
+margin_left = 444.0
+margin_right = 580.0
+margin_bottom = 660.0
+
+[node name="Bag" type="TextureRect" parent="Border/HBoxContainer"]
+margin_bottom = 660.0
+
+[node name="Center" type="MarginContainer" parent="Border/HBoxContainer"]
 margin_left = 4.0
 margin_right = 4.0
-margin_bottom = 40.0
+margin_bottom = 660.0
 
-[node name="Topright Corner" type="MarginContainer" parent="HBoxContainer/VBoxContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="Border/HBoxContainer"]
+margin_left = 8.0
+margin_right = 136.0
+margin_bottom = 660.0
 
-[node name="Spacer Lantern" type="MarginContainer" parent="HBoxContainer/VBoxContainer"]
-margin_top = 4.0
-margin_bottom = 4.0
+[node name="Lantern" parent="Border/HBoxContainer/VBoxContainer" instance=ExtResource( 1 )]
+margin_right = 128.0
+margin_bottom = 128.0
+
+[node name="Spacer Lantern" type="MarginContainer" parent="Border/HBoxContainer/VBoxContainer"]
+margin_top = 132.0
+margin_right = 128.0
+margin_bottom = 132.0
+
+[node name="RMB" parent="Border/HBoxContainer/VBoxContainer" instance=ExtResource( 1 )]
+margin_top = 136.0
+margin_right = 128.0
+margin_bottom = 264.0
+
+[node name="LMB" parent="Border/HBoxContainer/VBoxContainer" instance=ExtResource( 1 )]
+margin_top = 268.0
+margin_right = 128.0
+margin_bottom = 396.0
+
+[node name="Shift" parent="Border/HBoxContainer/VBoxContainer" instance=ExtResource( 1 )]
+margin_top = 400.0
+margin_right = 128.0
+margin_bottom = 528.0
+
+[node name="Space" parent="Border/HBoxContainer/VBoxContainer" instance=ExtResource( 1 )]
+margin_top = 532.0
+margin_right = 128.0
+margin_bottom = 660.0
