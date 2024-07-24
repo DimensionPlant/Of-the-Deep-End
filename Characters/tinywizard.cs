@@ -14,7 +14,7 @@ public partial class TinyWizard : BaseEntity
 		Sprite Hat = GetNode<Sprite>("Hat");
 		Sprite Staff = GetNode<Sprite>("Staff");
 		int sprite_id = (int) Math.Round(4*((AngleViaX(mouserelpos))/Math.PI+1));
-		if(sprite_id<8)
+		if(sprite_id<8 && sprite_id>0)
 		{
 			Hat.Frame = sprite_id;
 			Staff.Frame = sprite_id;
