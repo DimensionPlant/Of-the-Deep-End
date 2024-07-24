@@ -7,8 +7,6 @@
 
 [node name="Main Menu" type="Node2D"]
 
-[node name="Level UI" parent="." instance=ExtResource( 2 )]
-
 [node name="Chest" parent="." instance=ExtResource( 3 )]
 position = Vector2( 558, 134 )
 
@@ -16,3 +14,5 @@ position = Vector2( 558, 134 )
 
 [node name="LeatherPadding" type="Sprite" parent="."]
 script = ExtResource( 4 )
+
+[node name="Level UI" parent="." instance=ExtResource( 2 )]
