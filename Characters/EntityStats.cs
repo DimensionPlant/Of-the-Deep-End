@@ -1,13 +1,14 @@
 using Godot;
 using System;
 
+[Serializable]
 public class EntityStats
 {
-	[Export] public int Health;
-	[Export] public float MoveSpeed;
-	[Export] public int AttackSpeed;
-	[Export] public int Strength;
-	[Export] public int Armor;
-	[Export] public int Dodge;
-	[Export] public int Regen;
+	[Export] public int Health = 100;
+	[Export] public int MoveSpeed = 100;
+	[Export] public int AttackSpeed = 100;
+	[Export] public int Strength = 100;
+	[Export] public int Armor = 0;
+	[Export] public int Dodge = 0;
+	[Export] public int Regen = 0;
 }

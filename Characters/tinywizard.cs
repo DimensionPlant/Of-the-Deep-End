@@ -39,21 +39,8 @@ public partial class TinyWizard : BaseEntity
 		*/
 		// Get the input direction and handle the movement/deceleration.
 		// As good practice, you should replace UI actions with custom gameplay actions.
-		Vector2 direction = Input.GetVector("ui_left", "ui_right", "ui_up", "ui_down");
-		if (direction != Vector2.Zero)
-		{
-			_velocity = direction * Speed;
-		}
-		else
-		{
-			if(_velocity.Length()>0)
-			{
-				_velocity -= _velocity/4;
-			}
-		}
-
-		_velocity = MoveAndSlide(_velocity);
-		//Hud();
+		//Vector2 direction = Input.GetVector("ui_left", "ui_right", "ui_up", "ui_down");
+		MoveEntityVelocity(Input.GetVector("ui_left", "ui_right", "ui_up", "ui_down"));
 	}
 
 	/**private void Hud()
