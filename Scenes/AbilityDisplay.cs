@@ -12,7 +12,20 @@ public partial class AbilityDisplay : Control
 	{
 		_display = GetNode("Center").GetNode<RichTextLabel>("Display");
 		_cooldown = GetNode<Timer>("Cooldown");
+		startTime(false);
+	}
+
+	public void startTime(Boolean darken)
+	{
 		_cooldown.Start();
+		//Color dark = new Color(0.35f,0.35f,0.35f);
+		Color dark = new Color("5a5a5a");
+
+		if(darken)
+		{
+			GetNode<TextureRect>("Icon").Modulate = dark;
+		}
+
 	}
 
 	public void addTime(double fuel)

@@ -1,13 +1,15 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Scenes/AbilityDisplay.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/UISprites/Bag.png" type="Texture" id=2]
+[ext_resource path="res://Scenes/LevelUI.cs" type="Script" id=3]
 
 [node name="Level UI" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_right = 896.0
 margin_bottom = 480.0
+script = ExtResource( 3 )
 
 [node name="Ribbon" type="Sprite" parent="."]
 position = Vector2( 5768, 0 )
@@ -17,14 +19,14 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 10.0
 margin_top = 10.0
-margin_right = 10.0
-margin_bottom = 10.0
+margin_right = -10.0
+margin_bottom = -10.0
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Border"]
-margin_left = 49.0
-margin_top = 67.0
-margin_right = 1871.0
-margin_bottom = 1012.0
+margin_left = 32.0
+margin_top = 57.0
+margin_right = 1868.0
+margin_bottom = 1002.0
 
 [node name="Bag" type="TextureRect" parent="Border/HBoxContainer"]
 margin_right = 236.0
@@ -40,35 +42,35 @@ margin_bottom = 889.0
 
 [node name="Center" type="MarginContainer" parent="Border/HBoxContainer"]
 margin_left = 240.0
-margin_right = 1690.0
+margin_right = 1640.0
 margin_bottom = 945.0
-rect_min_size = Vector2( 1450, 100 )
+rect_min_size = Vector2( 1400, 100 )
 
 [node name="Counters" type="VBoxContainer" parent="Border/HBoxContainer"]
-margin_left = 1694.0
-margin_right = 1822.0
+margin_left = 1644.0
+margin_right = 1836.0
 margin_bottom = 945.0
 
 [node name="Lantern" parent="Border/HBoxContainer/Counters" instance=ExtResource( 1 )]
-margin_right = 128.0
-margin_bottom = 128.0
+margin_right = 192.0
+margin_bottom = 192.0
+rect_min_size = Vector2( 192, 192 )
 
 [node name="Spacer" type="MarginContainer" parent="Border/HBoxContainer/Counters"]
-margin_top = 132.0
-margin_right = 128.0
-margin_bottom = 212.0
+margin_top = 196.0
+margin_right = 192.0
+margin_bottom = 276.0
 rect_min_size = Vector2( 0, 80 )
 
 [node name="Abilities" type="CenterContainer" parent="Border/HBoxContainer/Counters"]
-margin_top = 216.0
-margin_right = 128.0
-margin_bottom = 740.0
+margin_top = 280.0
+margin_right = 192.0
+margin_bottom = 804.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Border/HBoxContainer/Counters/Abilities"]
-margin_left = 18.0
-margin_right = 128.0
+margin_left = 32.0
+margin_right = 160.0
 margin_bottom = 524.0
-rect_scale = Vector2( 0.75, 0.75 )
 
 [node name="RMB" parent="Border/HBoxContainer/Counters/Abilities/VBoxContainer" instance=ExtResource( 1 )]
 margin_right = 128.0
