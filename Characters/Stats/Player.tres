@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Characters/Stats/EntityStats.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+Health = 0
+MoveSpeed = 0
+AttackSpeed = 0
+Strength = 0
+Armor = 0
+Dodge = 0
+Regen = 0
