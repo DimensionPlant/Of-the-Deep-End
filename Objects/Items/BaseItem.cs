@@ -1,7 +1,7 @@
 using Godot;
 using System;
 
-public abstract class BaseItem : Sprite
+public abstract class BaseItem : Area2D 
 {
 	[Export] public string itemName;
 	[Export] public string itemDescription;
@@ -10,10 +10,10 @@ public abstract class BaseItem : Sprite
 	public int ItemCount { get => _itemCount; }
 	protected int _itemCount = 1;
 	
-	public abstract void OnEquip();
-	public abstract void OnIncreaseCount();
-	public abstract void OnTick();
-	public abstract void OnUnequip();
+	public abstract void OnEquip(BaseEntity entity);
+	public abstract void OnIncreaseCount(BaseEntity entity);
+	public abstract void OnTick(BaseEntity entity);
+	public abstract void OnUnequip(BaseEntity entity);
 }
 public enum ItemRarity{
 	Normal,

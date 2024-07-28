@@ -8,16 +8,6 @@
 
 config_version=4
 
-_global_script_classes=[ {
-"base": "Resource",
-"class": "EntityStats",
-"language": "GDScript",
-"path": "res://Characters/Stats/EntityStats.gd"
-} ]
-_global_script_class_icons={
-"EntityStats": ""
-}
-
 [application]
 
 config/name="Of-the- Deep- End"

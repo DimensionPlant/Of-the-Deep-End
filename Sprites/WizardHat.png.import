@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Stafftest.png-f877ebadea1246b7814723ec068de3f3.stex"
+path="res://.import/WizardHat.png-e47cff093be943c40a37ff63af143f19.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Characters/EntitySprites/Stafftest.png"
-dest_files=[ "res://.import/Stafftest.png-f877ebadea1246b7814723ec068de3f3.stex" ]
+source_file="res://Sprites/WizardHat.png"
+dest_files=[ "res://.import/WizardHat.png-e47cff093be943c40a37ff63af143f19.stex" ]
 
 [params]
 

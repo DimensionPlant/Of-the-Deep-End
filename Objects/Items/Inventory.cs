@@ -3,20 +3,28 @@ using System;
 using System.Collections.Generic;
 
 //Only in charge of abstraction and handling items. Not in charge of their logic / effects. 
-public class Inventory : Node
+public class Inventory : Area2D
 {
+	public BaseEntity inventoryEntity = null;
 	public List<BaseItem> items = new List<BaseItem>();
-	
+
+	public override void _EnterTree()
+	{
+		inventoryEntity = GetParent<BaseEntity>();
+		if (inventoryEntity != null) { inventoryEntity.inventory = this; }
+	}
 	//Triggers when item is first added, usually for like one-off effects. 
 	public bool AddItem(BaseItem item){
+		if(inventoryEntity == null) { item.QueueFree(); return false; } //Makes sure entity with an inventory is not null
+
 		if(item != null){ //Check if item is null. 
 			foreach(BaseItem _item in items){ //Go through every item in the inventory
 				if(_item.itemName == item.itemName){ //Check if the item is already in the inventory. 
-					_item.OnIncreaseCount();
+					_item.OnIncreaseCount(inventoryEntity);
 					item.QueueFree();
 				}
 				else {
-					item.OnEquip();
+					item.OnEquip(inventoryEntity);
 					item.Hide();
 				}
 			}
@@ -33,7 +41,13 @@ public class Inventory : Node
 	//Ticks once every Physics frame
 	public void TickItems(){
 		foreach(BaseItem item in items){
-			item.OnTick();
+			item.OnTick(inventoryEntity);
 		}
+	}
+	
+	private void _on_Inventory_body_entered(object body)
+	{	
+		GD.Print("Testing");
+		if(body is BaseItem item){ AddItem(item); GD.Print("Successful!"); }
 	}
 }

@@ -4,7 +4,8 @@
 [ext_resource path="res://Characters/monsterStates/LightState.cs" type="Script" id=2]
 [ext_resource path="res://Characters/monsterStates/DarkState.cs" type="Script" id=3]
 [ext_resource path="res://StateMachine.cs" type="Script" id=4]
-[ext_resource path="res://Characters/monster.cs" type="Script" id=5]
+[ext_resource path="res://Characters/Entities/monster.cs" type="Script" id=5]
+
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {

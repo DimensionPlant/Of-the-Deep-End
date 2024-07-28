@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/CrabHead.png-33b6cbd794390129d04987b1d3187944.stex"
+path="res://.import/LeatherPadding.png-b994ca09714f6f457e6d9931b5ae7c58.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Characters/EntitySprites/CrabHead.png"
-dest_files=[ "res://.import/CrabHead.png-33b6cbd794390129d04987b1d3187944.stex" ]
+source_file="res://Objects/Sprites/LeatherPadding.png"
+dest_files=[ "res://.import/LeatherPadding.png-b994ca09714f6f457e6d9931b5ae7c58.stex" ]
 
 [params]
 
