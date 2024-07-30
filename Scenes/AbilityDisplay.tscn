@@ -1,34 +1,51 @@
 [gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Scenes/AbilityDisplay.cs" type="Script" id=1]
-[ext_resource path="res://icon.svg" type="Texture" id=2]
+[ext_resource path="res://Sprites/WAbilityIcons3.png" type="Texture" id=2]
 
 [node name="AbilityDisplay" type="Control"]
 rect_min_size = Vector2( 128, 128 )
 script = ExtResource( 1 )
 
-[node name="Default" type="TextureRect" parent="."]
-anchor_right = 1.0
-anchor_bottom = 1.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-
 [node name="Icon" type="TextureRect" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
+rect_min_size = Vector2( 128, 128 )
 texture = ExtResource( 2 )
+expand = true
+stretch_mode = 1
+
+[node name="Alt" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_min_size = Vector2( 128, 128 )
+expand = true
 stretch_mode = 1
 
 [node name="Cooldown" type="Timer" parent="."]
-wait_time = 60.0
+wait_time = 10.0
+one_shot = true
 
 [node name="Center" type="CenterContainer" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
 
 [node name="Display" type="RichTextLabel" parent="Center"]
+visible = false
 margin_left = 34.0
 margin_top = 34.0
 margin_right = 94.0
 margin_bottom = 94.0
 rect_min_size = Vector2( 60, 60 )
+bbcode_text = "[b] test [/b]"
+text = "[b] test [/b]"
+
+[node name="Bar" type="ColorRect" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 120.0
+rect_min_size = Vector2( 128, 4 )
+color = Color( 1, 1, 1, 0.25098 )
+
+[connection signal="timeout" from="Cooldown" to="." method="_Elapsed"]
