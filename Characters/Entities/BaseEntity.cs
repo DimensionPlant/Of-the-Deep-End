@@ -31,8 +31,14 @@ public abstract class BaseEntity : KinematicBody2D
     }
 
     public void MoveEntityVelocity(Vector2 moveDir){
-		if (moveDir != Vector2.Zero) { _velocity = moveDir * (Stats.MoveSpeed.Value * 2f); }
-		else { if(_velocity.Length()>0) { _velocity -= _velocity/4; } }
+		if (moveDir != Vector2.Zero) 
+		{
+			_velocity = moveDir * (Stats.MoveSpeed.Value * 2f); 
+		}
+		else if(_velocity.Length()>0) 
+		{
+			_velocity -= _velocity/4; 
+		} 
 		_velocity = MoveAndSlide(_velocity);
 	}
 }
