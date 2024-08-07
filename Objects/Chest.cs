@@ -24,8 +24,11 @@ public partial class Chest : Node2D
 
 	private void _Activate()
 	{
+		//check if enough time left to open it
 		_skin.Frame = _orientation+8;
 		_skin.Modulate = Activated;
+		//spawn item
+		//figure out id then add script to item object
 	}
 
 //  // Called every frame. 'delta' is the elapsed time since the previous frame.

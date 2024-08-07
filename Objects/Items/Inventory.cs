@@ -48,6 +48,8 @@ public class Inventory : Area2D
 	private void _on_Inventory_body_entered(object body)
 	{	
 		GD.Print("Testing");
+		//The check below returns the kinematicbody2d, which is the main body of the wizard
+		GD.Print(body.ToString());
 		if(body is BaseItem item){ AddItem(item); GD.Print("Successful!"); }
 	}
 }

@@ -21,6 +21,7 @@ public partial class InteractComponent : Node
 		base._Process(delta);
 		//if Close and interact
 		//roll for items and make both buttons visible
+		//add timer to prevent over usage
 		if(Close&&Input.IsActionJustPressed("interact"))
 		{
 			EmitSignal(nameof(Interacted));
@@ -29,7 +30,6 @@ public partial class InteractComponent : Node
 
 	private void InRange(object area)
 	{
-		//still needs to implemented
 		if (area is TinyWizard)
 		{
 			Close = true;

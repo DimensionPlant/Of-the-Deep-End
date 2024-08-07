@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Objects/Sprites/ItemSheet.png" type="Texture" id=1]
+[ext_resource path="res://Objects/Interact/InteractComponent.cs" type="Script" id=2]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 27.8
+
+[node name="Item" type="Node2D"]
+
+[node name="Sprite" type="Sprite" parent="."]
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 1 )
+hframes = 6
+vframes = 10
+
+[node name="Area2D" type="Area2D" parent="."]
+script = ExtResource( 2 )
+
+[node name="Range" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource( 1 )
+
+[node name="Button" type="Button" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = -25.0
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
