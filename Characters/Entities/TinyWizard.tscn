@@ -32,4 +32,5 @@ script = ExtResource( 5 )
 scale = Vector2( 8, 8 )
 shape = SubResource( 3 )
 
+[connection signal="area_entered" from="Inventory" to="Inventory" method="_on_Inventory_body_entered"]
 [connection signal="body_entered" from="Inventory" to="Inventory" method="_on_Inventory_body_entered"]

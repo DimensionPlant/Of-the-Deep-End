@@ -1,7 +1,13 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Scenes/AbilityDisplay.cs" type="Script" id=1]
 [ext_resource path="res://Sprites/WAbilityIcons3.png" type="Texture" id=2]
+
+[sub_resource type="DynamicFontData" id=1]
+
+[sub_resource type="DynamicFont" id=2]
+size = 25
+font_data = SubResource( 1 )
 
 [node name="AbilityDisplay" type="Control"]
 rect_min_size = Vector2( 128, 128 )
@@ -39,6 +45,16 @@ margin_bottom = 94.0
 rect_min_size = Vector2( 60, 60 )
 bbcode_text = "[b] test [/b]"
 text = "[b] test [/b]"
+
+[node name="Display2" type="Label" parent="Center"]
+margin_left = 32.0
+margin_top = 32.0
+margin_right = 96.0
+margin_bottom = 96.0
+rect_min_size = Vector2( 64, 64 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "60"
 
 [node name="Bar" type="ColorRect" parent="."]
 visible = false
