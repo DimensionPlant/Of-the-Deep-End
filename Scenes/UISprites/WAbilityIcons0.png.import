@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/WAbilityIcons0.png-54b78924f3231b30a71c411094c3bfcf.stex"
+path="res://.import/WAbilityIcons0.png-366c8d5340b8eafa657537e5e4cfba5d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/WAbilityIcons0.png"
-dest_files=[ "res://.import/WAbilityIcons0.png-54b78924f3231b30a71c411094c3bfcf.stex" ]
+source_file="res://Scenes/UISprites/WAbilityIcons0.png"
+dest_files=[ "res://.import/WAbilityIcons0.png-366c8d5340b8eafa657537e5e4cfba5d.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/WizardAbilityIcons.png-7c09009faff3592c0a2ee46f1adc1ec9.stex"
+path="res://.import/Brick.png-05575ed256b9418db9571658bc3a9ecc.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/WizardAbilityIcons.png"
-dest_files=[ "res://.import/WizardAbilityIcons.png-7c09009faff3592c0a2ee46f1adc1ec9.stex" ]
+source_file="res://Scenes/Tilemap/Brick.png"
+dest_files=[ "res://.import/Brick.png-05575ed256b9418db9571658bc3a9ecc.stex" ]
 
 [params]
 

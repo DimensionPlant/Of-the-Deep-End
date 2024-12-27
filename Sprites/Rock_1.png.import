@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/WAbilityIcons2.png-acf9d26ce7cf8ffb22c8208d6d691474.stex"
+path="res://.import/Rock_1.png-4a86e4065964b52ede26534d547a4ab1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/WAbilityIcons2.png"
-dest_files=[ "res://.import/WAbilityIcons2.png-acf9d26ce7cf8ffb22c8208d6d691474.stex" ]
+source_file="res://Sprites/Rock_1.png"
+dest_files=[ "res://.import/Rock_1.png-4a86e4065964b52ede26534d547a4ab1.stex" ]
 
 [params]
 

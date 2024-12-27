@@ -3,11 +3,11 @@
 [ext_resource path="res://Scenes/AbilityDisplay.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/UISprites/Bag.png" type="Texture" id=2]
 [ext_resource path="res://Scenes/LevelUI.cs" type="Script" id=3]
-[ext_resource path="res://Sprites/Latern.png" type="Texture" id=4]
-[ext_resource path="res://Sprites/WAbilityIcons0.png" type="Texture" id=5]
-[ext_resource path="res://Sprites/WAbilityIcons1.png" type="Texture" id=6]
-[ext_resource path="res://Sprites/WAbilityIcons3.png" type="Texture" id=7]
-[ext_resource path="res://Sprites/WAbilityIcons2.png" type="Texture" id=8]
+[ext_resource path="res://Scenes/UISprites/Latern.png" type="Texture" id=4]
+[ext_resource path="res://Scenes/UISprites/WAbilityIcons0.png" type="Texture" id=5]
+[ext_resource path="res://Scenes/UISprites/WAbilityIcons1.png" type="Texture" id=6]
+[ext_resource path="res://Scenes/UISprites/WAbilityIcons3.png" type="Texture" id=7]
+[ext_resource path="res://Scenes/UISprites/WAbilityIcons2.png" type="Texture" id=8]
 
 [node name="Level UI" type="Control"]
 anchor_right = 1.0

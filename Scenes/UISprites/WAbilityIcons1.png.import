@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Latern.png-08f315c236e6c639f8f950ab4578a600.stex"
+path="res://.import/WAbilityIcons1.png-da799a290a5f8273d2c8b1328ad7eecb.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Latern.png"
-dest_files=[ "res://.import/Latern.png-08f315c236e6c639f8f950ab4578a600.stex" ]
+source_file="res://Scenes/UISprites/WAbilityIcons1.png"
+dest_files=[ "res://.import/WAbilityIcons1.png-da799a290a5f8273d2c8b1328ad7eecb.stex" ]
 
 [params]
 

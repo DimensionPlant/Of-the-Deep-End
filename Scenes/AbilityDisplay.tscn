@@ -1,13 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Scenes/AbilityDisplay.cs" type="Script" id=1]
-[ext_resource path="res://Sprites/WAbilityIcons3.png" type="Texture" id=2]
-
-[sub_resource type="DynamicFontData" id=1]
+[ext_resource path="res://Scenes/UISprites/WAbilityIcons3.png" type="Texture" id=2]
 
 [sub_resource type="DynamicFont" id=2]
 size = 25
-font_data = SubResource( 1 )
 
 [node name="AbilityDisplay" type="Control"]
 rect_min_size = Vector2( 128, 128 )

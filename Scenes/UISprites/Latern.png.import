@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Turf.png-9f950db3d93664a9aa96d09306de62ab.stex"
+path="res://.import/Latern.png-b438ceca9c02db8b11e5c0aecdc90190.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Turf.png"
-dest_files=[ "res://.import/Turf.png-9f950db3d93664a9aa96d09306de62ab.stex" ]
+source_file="res://Scenes/UISprites/Latern.png"
+dest_files=[ "res://.import/Latern.png-b438ceca9c02db8b11e5c0aecdc90190.stex" ]
 
 [params]
 
